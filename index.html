@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-Sketch</title>
+    <link rel="stylesheet" href="sketch.css">
 </head>
 <body>
     <div class="flex-container">
@@ -12,13 +13,15 @@
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button class="black-button">Black</button>
-                <button class="gray-button">Gray</button>
-                <button class="random-button">Random</button>
-                <button>Reset</button>
+                <button class="black-button" onclick="changeColour('black')">Black</button>
+                <button class="gray-button"  onclick="changeColour('gray')">Gray</button>
+                <button class="random-button" onclick="changeColour('random')">Random</button>
+                <button class="erase-button"  onclick="changeColour('white')">Eraser</button>
+                <button onclick="reset()">Reset</button>
             </div>
             <div>
-                <input type="text" placeholder="Size of the Board" value="16">
+                <input type="text" placeholder="Size of the board" value="16" onchange="changesize(this.value)" >
+                <button>Set Size</button>
             </div>
 
 
