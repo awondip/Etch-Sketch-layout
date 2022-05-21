@@ -48,7 +48,15 @@ function changeColour(choice){
 function reset(){
     board = document.querySelector(".board")
     squares =board.querySelectorAll("div")
-    squares.forEach((div) => div.remove());
+    squares.forEach((div) => div.style.backgroundColor = "white");
+
 
 
 }
+
+document.querySelector('body').addEventListener("click", (e) => {
+    console.log(e)
+    if (e.target.tagName != "BUTTON"){
+        click = !click
+    }
+})
