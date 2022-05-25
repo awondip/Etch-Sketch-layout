@@ -1,6 +1,7 @@
 .body{
     margin: 0px;
     padding: 0px;
+    flex-wrap: wrap;
     
 }
 
@@ -8,6 +9,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
+    justify-content: center;
     margin-left: -100px;
     flex-direction: column;
     align-items: center;
@@ -31,6 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-items: center;
     min-width: 200px;
     min-height: 300px;
     width: 40vw;
@@ -41,10 +44,14 @@
     
     .title {
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         font-size: 30px;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 50px;
+        align-items: center;
         
     }
     .buttons {
